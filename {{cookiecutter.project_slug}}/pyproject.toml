@@ -1,0 +1,41 @@
+[build-system]
+requires = ["hatchling", ]
+build-backend = "hatchling.build"
+
+[project]
+name = "{{ cookiecutter.project_slug }}"
+description = "{{ cookiecutter.project_slug }}"
+keywords = ["{{ cookiecutter.project_slug }}"]
+requires-python = ">=3.7"
+dependencies = [
+    {%- if cookiecutter.command_line_interface|lower == 'click' %}'click',{%- endif %}
+]
+dynamic = ["version", ]
+classifiers = [
+    "Programming Language :: Python :: 3",
+]
+[project.optional-dependencies]
+test = [
+    "pytest",
+]
+
+
+[[project.authors]]
+name = "{{ cookiecutter.full_name.replace('\"', '\\\"') }}"
+email = "{{ cookiecutter.email }}"
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
+
+[project.license]
+text = "{{ cookiecutter.open_source_license }}"
+
+[project.urls]
+Source = "https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}"
+
+[tool.check-manifest]
+ignore = [".*", ]
+
+[tool.hatch.version]
+path = "{{ cookiecutter.project_slug }}/__init__.py"
