@@ -1,7 +1,7 @@
-![](https://img.shields.io/github/license/wh1isper/{{cookiecutter.project_slug}})
-![](https://img.shields.io/github/v/release/wh1isper/{{cookiecutter.project_slug}})
+![](https://img.shields.io/github/license/{{ cookiecutter.github_username }}/{{cookiecutter.project_slug}})
+![](https://img.shields.io/github/v/release/{{ cookiecutter.github_username }}/{{cookiecutter.project_slug}})
 ![](https://img.shields.io/pypi/dm/{{cookiecutter.project_slug}})
-![](https://img.shields.io/github/last-commit/wh1isper/{{cookiecutter.project_slug}})
+![](https://img.shields.io/github/last-commit/{{ cookiecutter.github_username }}/{{cookiecutter.project_slug}})
 ![](https://img.shields.io/pypi/pyversions/{{cookiecutter.project_slug}})
 
 # {{ cookiecutter.project_slug }}
