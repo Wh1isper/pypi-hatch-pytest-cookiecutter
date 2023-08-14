@@ -1,4 +1,4 @@
-# Making a new release of {{cookiecutter.project_slug}}
+# Making a new release of}
 
 ## Manual release
 
@@ -11,8 +11,7 @@ packages. Before generating a package, we first need to install `build`.
 pip install build twine hatch
 ```
 
-Bump the version using `hatch`. By default this will create a tag.
-See the docs on [hatch-nodejs-version](https://github.com/agoose77/hatch-nodejs-version#semver) for details.
+Bump the version using `hatch`.
 
 ```bash
 hatch version <new-version>
