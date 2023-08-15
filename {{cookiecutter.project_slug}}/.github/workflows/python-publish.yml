@@ -5,7 +5,7 @@ on:
     types: [published]
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   deploy:
@@ -29,3 +29,11 @@ jobs:
       with:
         user: __token__
         password: {% raw %}${{ secrets.PYPI_API_TOKEN }}{% endraw %}
+    - name: Upload dists to release
+      uses: svenstaro/upload-release-action@v2
+      with:
+        repo_token: ${{ secrets.GITHUB_TOKEN }}
+        file: dist/*
+        file_glob: true
+        tag: ${{ github.ref }}
+        overwrite: true
