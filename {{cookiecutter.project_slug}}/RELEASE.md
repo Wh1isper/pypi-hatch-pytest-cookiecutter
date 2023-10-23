@@ -1,4 +1,4 @@
-# Making a new release of}
+# Making a new release of {{ cookiecutter.project_slug }}
 
 ## Manual release
 
@@ -31,3 +31,14 @@ Then to upload the package to PyPI, do:
 ```bash
 twine upload dist/*
 ```
+
+
+## Automatic release
+
+### GitHub Actions
+
+Configure the following secrets in the [GitHub repository](https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.project_name }}/settings/secrets/actions/new):
+
+- `PYPI_API_TOKEN`: PyPI API token
+
+Then create a new release in GitHub. The release will be automatically published to PyPI.
