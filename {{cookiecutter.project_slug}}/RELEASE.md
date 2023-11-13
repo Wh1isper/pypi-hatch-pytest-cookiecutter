@@ -41,4 +41,14 @@ Configure the following secrets in the [GitHub repository](https://github.com/{{
 
 - `PYPI_API_TOKEN`: PyPI API token
 
-Then create a new release in GitHub. The release will be automatically published to PyPI.
+### Docker iamges
+
+Configure the following secrets in the [GitHub repository](https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.project_name }}/settings/secrets/actions/new):
+
+- `DOCKERHUB_USERNAME`: DockerHub username
+- `DOCKERHUB_TOKEN`: DockerHub token
+
+### Release
+
+Create a new release in GitHub. Everything will be automatically published to PyPI and DockerHub.
+

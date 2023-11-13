@@ -1,5 +1,6 @@
 ![](https://img.shields.io/github/license/{{ cookiecutter.github_username }}/{{cookiecutter.project_slug}})
 ![](https://img.shields.io/github/v/release/{{ cookiecutter.github_username }}/{{cookiecutter.project_slug}})
+![](https://img.shields.io/docker/image-size/{{ cookiecutter.github_username }}/{{cookiecutter.project_name}})
 ![](https://img.shields.io/pypi/dm/{{cookiecutter.project_slug}})
 ![](https://img.shields.io/github/last-commit/{{ cookiecutter.github_username }}/{{cookiecutter.project_slug}})
 ![](https://img.shields.io/pypi/pyversions/{{cookiecutter.project_slug}})
@@ -10,8 +11,13 @@
 
 `pip install {{ cookiecutter.project_slug }}`
 
+Or use docker image
+
+`docker pull {{ cookiecutter.github_username }}/{{cookiecutter.project_name}}`
+
 ## Usage
 
+TBD
 
 ## Develop
 
