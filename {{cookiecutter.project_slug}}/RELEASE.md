@@ -51,4 +51,3 @@ Configure the following secrets in the [GitHub repository](https://github.com/{{
 ### Release
 
 Create a new release in GitHub. Everything will be automatically published to PyPI and DockerHub.
-
