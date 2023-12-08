@@ -1,5 +1,5 @@
 ---
-name: "📕 document request"
+name: "📕 Document request"
 about: Suggest add docs for project
 labels: documentation
 
