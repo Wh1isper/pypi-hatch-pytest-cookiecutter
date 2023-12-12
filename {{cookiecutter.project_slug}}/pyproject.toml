@@ -6,13 +6,18 @@ build-backend = "hatchling.build"
 name = "{{ cookiecutter.project_slug }}"
 description = "{{ cookiecutter.project_slug }}"
 keywords = ["{{ cookiecutter.project_slug }}"]
-requires-python = ">=3.7"
+requires-python = ">=3.8"
 dependencies = [
 ]
 dynamic = ["version", ]
 classifiers = [
     "Programming Language :: Python :: 3",
+    'Programming Language :: Python :: 3.8',
+    'Programming Language :: Python :: 3.9',
+    'Programming Language :: Python :: 3.10',
+    'Programming Language :: Python :: 3.11',
 ]
+
 [project.optional-dependencies]
 test = [
     "pytest",
