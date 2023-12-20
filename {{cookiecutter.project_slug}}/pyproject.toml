@@ -22,7 +22,7 @@ classifiers = [
 test = [
     "pytest",
 ]
-docs = ["Sphinx", "sphinx-rtd-theme", "sphinx-click", "autodoc_pydantic"]
+docs = ["Sphinx", "pydata-sphinx-theme", "sphinx-click", "autodoc_pydantic"]
 
 [[project.authors]]
 name = "{{ cookiecutter.full_name.replace('\"', '\\\"') }}"
