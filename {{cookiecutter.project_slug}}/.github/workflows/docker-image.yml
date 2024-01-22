@@ -23,7 +23,7 @@ jobs:
         python -m pip install --upgrade pip
         pip install build twine hatch
     - name: Versioning package
-      run: hatch version ${{ github.ref_name }}
+      run: hatch version {% raw %}${{ github.ref_name }}{% endraw %}
     # Build docker images
     -
       name: Set up QEMU
