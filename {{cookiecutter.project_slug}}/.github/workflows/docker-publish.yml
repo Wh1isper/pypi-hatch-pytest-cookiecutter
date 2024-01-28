@@ -31,7 +31,7 @@ jobs:
         password: {% raw %}${{ secrets.DOCKERHUB_TOKEN }}{% endraw %}
     -
       name: Build and push image
-      id: docker_buildls
+      id: docker_build_publish
       uses: docker/build-push-action@v4
       with:
         context: .
