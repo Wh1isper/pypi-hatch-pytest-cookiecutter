@@ -23,10 +23,12 @@ Before creating a new feature request please search the issues for relevant feat
 <!-- Provide a clear and concise description of a way to accomplish what you want. For example:
 
 * Add an option so that when [...]  [...] will happen
- -->
+-->
 
 ### Additional context
 
 <!-- Add any other context or screenshots about the feature request here. You can also include links to examples of other programs that have something similar to your request. For example:
 
 * Another project [...] solved this by [...]
+
+-->
