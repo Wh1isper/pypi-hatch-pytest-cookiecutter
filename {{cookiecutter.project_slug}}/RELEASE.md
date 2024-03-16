@@ -8,7 +8,7 @@ This project can be distributed as Python
 packages. Before generating a package, we first need to install `build`.
 
 ```bash
-pip install build twine hatch
+pip install twine hatch
 ```
 
 Bump the version using `hatch`.
@@ -21,7 +21,7 @@ To create a Python source package (`.tar.gz`) and the binary package (`.whl`) in
 
 ```bash
 rm -rf dist/*
-python -m build
+hatch build
 ```
 
 > `python setup.py sdist bdist_wheel` is deprecated and will not work for this package.
