@@ -1,6 +1,6 @@
 FROM python:3.10.12-slim-bookworm as builder
 
-RUN pip install twine hatch
+RUN pip install hatch
 COPY . /source
 WORKDIR /source
 RUN hatch build
