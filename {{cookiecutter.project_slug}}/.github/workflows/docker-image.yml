@@ -27,6 +27,8 @@ jobs:
       with:
         context: .
         platforms: linux/amd64
+        cache-from: type=gha
+        cache-to: type=gha,mode=max
         file: ./docker/Dockerfile
         push: false
         tags: {% raw %}${{ secrets.DOCKERHUB_USERNAME }}{% endraw %}/{{ cookiecutter.project_name }}:latest
