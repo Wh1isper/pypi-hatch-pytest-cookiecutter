@@ -31,4 +31,4 @@ jobs:
         cache-to: type=gha,mode=max
         file: ./docker/Dockerfile
         push: false
-        tags: {% raw %}${{ secrets.DOCKERHUB_USERNAME }}{% endraw %}/{{ cookiecutter.project_name }}:latest
+        tags: {% raw %}${{ vars.DOCKERHUB_USERNAME }}{% endraw %}/{{ cookiecutter.project_name }}:latest

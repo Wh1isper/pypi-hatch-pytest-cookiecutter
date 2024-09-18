@@ -43,10 +43,17 @@ Configure the following secrets in the [GitHub repository](https://github.com/{{
 
 ### Docker iamges
 
-Configure the following secrets in the [GitHub repository](https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.project_name }}/settings/secrets/actions/new):
+Configure the following secrets and variables in the [GitHub repository](https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.project_name }}/settings/secrets/actions/new):
+
+
+#### Secrets
+
+- `DOCKERHUB_TOKEN`: DockerHub token
+
+#### Variables
 
 - `DOCKERHUB_USERNAME`: DockerHub username
-- `DOCKERHUB_TOKEN`: DockerHub token
+
 
 ### Release
 
