@@ -32,7 +32,7 @@ jobs:
       uses: docker/login-action@v3
       with:
         registry: ghcr.io
-        username: {% raw %}${{ github.actor }}{% endraw %}
+        username: {{ cookiecutter.github_username }}
         password: {% raw %}${{ secrets.PAT }}{% endraw %}
     -
       name: Build and push release
@@ -47,4 +47,4 @@ jobs:
         push: true
         tags: |
           {% raw %}${{ vars.DOCKERHUB_USERNAME }}{% endraw %}/{{ cookiecutter.project_name }}:dev
-          ghcr.io/{% raw %}${{ github.actor }}{% endraw %}/{{ cookiecutter.project_name }}:dev
+          ghcr.io/{{ cookiecutter.github_username }}/{{ cookiecutter.project_name }}:dev
