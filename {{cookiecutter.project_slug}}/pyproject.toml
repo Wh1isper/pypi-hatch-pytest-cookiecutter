@@ -20,6 +20,9 @@ classifiers = [
 [project.optional-dependencies]
 test = [
     "pytest",
+    "pytest-asyncio",
+    "pytest-cov",
+    "dirty-equals",
 ]
 docs = ["Sphinx", "pydata-sphinx-theme", "sphinx-click", "autodoc_pydantic"]
 
